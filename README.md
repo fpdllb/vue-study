@@ -1,4 +1,4 @@
-# study1
+# study
 
 > learning
 
