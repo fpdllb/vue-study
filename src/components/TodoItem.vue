@@ -4,13 +4,13 @@
 
 <script>
 export default {
-  props: ["content", "index"],
+  props: ['content', 'index'],
   methods: {
-    handleClick: function() {
-      this.$emit("delete", this.index);
+    handleClick: function () {
+      this.$emit('delete', this.index)
     }
   }
-};
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

@@ -15,30 +15,30 @@
 </template>
 
 <script>
-import TodoItem from "./components/TodoItem";
+import TodoItem from './components/TodoItem'
 export default {
-  name: "App",
+  name: 'App',
   components: {
-    "todo-item": TodoItem
+    'todo-item': TodoItem
   },
-  data: function() {
+  data: function () {
     return {
-      inputValue: "",
+      inputValue: '',
       list: []
-    };
+    }
   },
   methods: {
-    handleSubmit: function() {
-      if (this.inputValue.trim() != "") {
-        this.list.push(this.inputValue);
-        this.inputValue = "";
+    handleSubmit: function () {
+      if (this.inputValue.trim() !== '') {
+        this.list.push(this.inputValue)
+        this.inputValue = ''
       }
     },
-    handleDelete: function(index) {
-      this.list.splice(index, 1);
+    handleDelete: function (index) {
+      this.list.splice(index, 1)
     }
   }
-};
+}
 </script>
 
 <style>
